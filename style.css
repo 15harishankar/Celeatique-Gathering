@@ -1,0 +1,150 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   /* Centers vertically */
+    padding: 20px;             /* Prevents edge sticking */
+}
+
+
+/* Animated Background */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Glassmorphism Card */
+.container {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;   /* Desktop max width */
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    color: white;
+    transition: 0.4s ease;
+}
+
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Form */
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+input, select {
+    height: 45px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Glowing Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #ff9f43, #ee5253);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    input, select, textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+header img {
+    width: 200%;
+    height: 250px;      /* 👈 Change this value */
+    object-fit: cover;
+    border-radius: 30px;
+}

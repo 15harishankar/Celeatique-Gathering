@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Celeatique Gatherings - Event Enquiry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622" 
+         alt="Event Banner">
+    <h1>Celeatique Gatherings</h1>
+    <p>Your Dream Event, Our Perfect Planning 🎉</p>
+</header>
+
+<div class="container">
+    <h2>Event Enquiry Form</h2>
+
+    <img src="c:\Users\haris\OneDrive\Pictures\PCL.jpg" 
+         alt="Event Planning" 
+         class="form-image">
+
+    <form id="enquiryForm">
+        <input type="text" id="name" placeholder="Client Name" required>
+        <input type="tel" id="phone" placeholder="Client Phone Number" required>
+
+        <select id="eventType" required>
+            <option value="">Select Event Type</option>
+            <option>Wedding</option>
+            <option>Birthday</option>
+            <option>Corporate Event</option>
+            <option>Engagement</option>
+            <option>Other</option>
+        </select>
+
+        <input type="date" id="date" required>
+        <textarea id="details" placeholder="Event Details" required></textarea>
+
+        <button type="submit">Send Enquiry</button>
+    </form>
+</div>
+
+<footer>
+    © 2026 Celeatique Gatherings | All Rights Reserved
+</footer>
+
+<!-- Connect JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
